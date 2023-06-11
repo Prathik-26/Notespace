@@ -1,0 +1,30 @@
+.grid-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 250px 250px 250px; 
+    justify-content: center;
+    width: 50%;
+
+  }
+  
+  .grid {
+    background-color: #f0f0f0;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .grid:nth-child(1),
+  .grid:nth-child(4),
+  .grid:nth-child(5) {
+    background-color: #000;
+    color: white;
+  }  
+
+  .overlay-image {
+    position: absolute; /* Position the overlay image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Adjust the object-fit value as needed */
+  }
