@@ -20,11 +20,46 @@
     color: white;
   }  
 
-  .overlay-image {
-    position: absolute; /* Position the overlay image */
+  @media screen and (max-width: 767px) {
+    .grid-main {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      width: 100%;
+    }
+  
+    .grid:nth-child(1) {
+      order: 1; 
+    }
+  
+    .grid:nth-child(2) {
+      order: 2; 
+    }
+  
+    .grid:nth-child(3) {
+      order: 4; 
+    }
+  
+    .grid:nth-child(4) {
+      order: 3; 
+    }
+
+    .grid:nth-child(5) {
+      order: 5; 
+    }
+  
+    .grid:nth-child(6) {
+      order: 5;
+    }
+  
+    
+  }
+  
+  
+  /* .overlay-image {
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Adjust the object-fit value as needed */
-  }
+    object-fit: contain; 
+  } */

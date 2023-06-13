@@ -1,7 +1,9 @@
 .card-box {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
+  float: left;
+  padding-left: 2in;
 }
 
 article {

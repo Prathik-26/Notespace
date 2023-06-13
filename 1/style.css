@@ -10,22 +10,20 @@ body, html {
   width: 20%;
   border-radius: 0;
   display: flex;
-  /* justify-content: flex-start; */
   justify-content: left;
-  align-grids: center;
-  /* flex: 0 0 150px; */
+
 }
 
 .bigbox {
   display: flex;
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
   justify-content: center;
-  align-grids: center;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
   .bigbox {
    flex-wrap: wrap;
-  }
+
 }
+} 
+
