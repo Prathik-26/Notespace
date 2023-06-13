@@ -1,29 +1,82 @@
 
-body, html {
+body,html{
   margin: 0;
-  padding: 16px 0; 
+  padding: 16px 0;
 }
 
-.box {
+#list-1{
+  background-color: aqua;
+  list-style: none;
+  width: 120px;
+  height: 20px;
+}
+
+.box{
   max-width: 1200px;
-  margin: 16px;
-  width: 20%;
-  border-radius: 0;
-  display: flex;
-  justify-content: left;
-
-}
-
-.bigbox {
-  display: flex;
-  justify-content: center;
+  display: grid;
   align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: none ;
+  margin: auto;
+  max-width: 1200px;
+  gap: 16px;
+  padding: 16px 0;
+}
+#list-2{
+  background-color: darkgreen;
+  list-style: none;
+  width: 120px;
+  height: 20px;
+}
+#list-3{
+  background-color: rgb(83, 30, 197);
+  list-style: none;
+  width: 120px;
+  height: 20px;
+}
+#list-4{
+  background-color: rgb(219, 41, 89);
+  list-style: none;
+  width: 120px;
+  height: 20px;
+}
+#list-5{
+  background-color: rgb(201, 97, 16);
+  list-style: none;
+  width: 120px;
+  height: 20px;
+}
+#list-6{
+  background-color: rgb(185, 197, 20);
+  list-style: none;
+  width: 120px;
+  height: 20px;
+}
+#list-7{
+  background-color: rgb(225, 128, 228);
+  list-style: none;
+  width: 120px;
+  height: 20px;
+}
+#list-8{
+  background-color: rgb(164, 7, 33);
+  list-style: none;
+  width: 120px;
+  height: 20px;
 }
 
+.box > li{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  column-gap: 16px;
+  row-gap: 16px;
+}
 @media (max-width: 768px) {
-  .bigbox {
-   flex-wrap: wrap;
+  .box{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-row:1fr 1fr 1fr 1fr;
 
+  }
 }
-} 
-

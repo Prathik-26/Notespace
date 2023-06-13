@@ -1,20 +1,18 @@
 .card-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  float: left;
-  padding-left: 2in;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+  justify-items: center;
+  align-content: start;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 article {
-  width: 350px;
-  max-width: 1200px;
-  margin: 16px;
-  margin-top: 48px;
   border: 1px solid #ccc;
-  border-radius: 16px;
-  overflow: hidden;
+  border-radius: 16px; 
   transition: 0.3s;
+  margin-bottom: 48px; 
 }
 
 article:hover {
@@ -36,7 +34,7 @@ img {
 }
 
 @media (max-width: 768px) {
-  article {
-    width: 100%;
+  .card-box {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   }
 }
