@@ -3,17 +3,20 @@ body, html {
   padding: 16px 0;
 }
 
-.container {
+/* .container {
   max-width: 1200px;
   margin: auto;
   padding: 16px 0;
-}
+} */
 
 .box {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 0;
 }
 
 .list-item {
