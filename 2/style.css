@@ -9,12 +9,6 @@
   grid-row-gap: 48px;
 }
 
-article {
-  border: 1px;
-  border-radius: 16px; 
-  transition: 0.3s;
-}
-
 h3{
   font-weight: bold;
 }
@@ -39,10 +33,14 @@ img{
 
 .card {
   background-color: lightgoldenrodyellow;
+  border: 1px;
+  border-radius: 16px; 
+  transition: 0.3s;
 }
 
 @media (max-width: 768px) {
   .card-box {
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }

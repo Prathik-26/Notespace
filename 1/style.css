@@ -14,7 +14,6 @@ body, html {
 }
 
 .Colors {
-  list-style: none;
   width: 100%;
   height: 20px;
 }
@@ -53,6 +52,7 @@ body, html {
 
 @media (max-width: 768px) {
   .box {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      grid-template-columns: 1fr 1fr;
+      grid-row:1fr 1fr 1fr 1fr;
   }
 }
